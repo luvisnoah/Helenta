@@ -24,9 +24,9 @@ const products = [
   },
   {
     id: 3,
-    name: "\u201CMidnight Cargo Pants\u201D",
+    name: "\u201CMoney Lovin\u2019 Snakes Cargo\u201D",
     price: "$165",
-    image: "/products/pants-1.jpg",
+    image: "/products/HelentaBundle.png",
     stripeLink: "https://buy.stripe.com/YOUR_LINK_HERE", // Replace with your Stripe link
   },
   {
