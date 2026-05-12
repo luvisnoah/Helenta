@@ -10,7 +10,7 @@ const products = [
     id: 1,
     name: "Phantom Oversized Hoodie",
     price: "$185",
-    image: "/products/hoodie-1.jpg",
+    image: "/products/hoodie1.png",
     tag: "New",
   },
   {
