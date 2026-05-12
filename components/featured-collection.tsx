@@ -8,27 +8,27 @@ import Image from "next/image"
 const products = [
   {
     id: 1,
-    name: "Phantom Oversized Hoodie",
+    name: ""Helenta Stars"",
     price: "$185",
     image: "/products/hoodie1.png",
     tag: "New",
   },
   {
     id: 2,
-    name: "Chrome Logo Tee",
+    name: ""Chrome Logo Tee"",
     price: "$95",
     image: "/products/tee-1.jpg",
     tag: "Limited",
   },
   {
     id: 3,
-    name: "Midnight Cargo Pants",
+    name: ""Midnight Cargo Pants"",
     price: "$165",
     image: "/products/pants-1.jpg",
   },
   {
     id: 4,
-    name: "Neon Pulse Jacket",
+    name: ""Neon Pulse Jacket"",
     price: "$245",
     image: "/products/jacket-1.jpg",
     tag: "Exclusive",
@@ -53,7 +53,7 @@ function ProductCard({ product, index }: { product: typeof products[0]; index: n
           src={product.image}
           alt={product.name}
           fill
-          className="object-cover transition-transform duration-700 group-hover:scale-105"
+          className="object-contain transition-transform duration-700 group-hover:scale-105"
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
