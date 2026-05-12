@@ -26,14 +26,14 @@ const products = [
     id: 3,
     name: "\u201CMoney Lovin\u2019 Snakes Cargo\u201D",
     price: "$165",
-    image: "/products/HelentaBundle.png",
+    image: "/products/cargo.png",
     stripeLink: "https://buy.stripe.com/YOUR_LINK_HERE", // Replace with your Stripe link
   },
   {
     id: 4,
     name: "\u201CNeon Pulse Jacket\u201D",
     price: "$245",
-    image: "/products/jacket-1.jpg",
+    image: "/products/HelentaBundle.png",
     tag: "Exclusive",
     stripeLink: "https://buy.stripe.com/YOUR_LINK_HERE", // Replace with your Stripe link
   },
