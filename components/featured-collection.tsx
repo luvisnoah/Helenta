@@ -12,6 +12,7 @@ const products = [
     price: "$185",
     image: "/products/hoodie1.png",
     tag: "New",
+    stripeLink: "https://buy.stripe.com/YOUR_LINK_HERE", // Replace with your Stripe link
   },
   {
     id: 2,
@@ -19,12 +20,14 @@ const products = [
     price: "$95",
     image: "/products/snakespolo.png",
     tag: "Limited",
+    stripeLink: "https://buy.stripe.com/YOUR_LINK_HERE", // Replace with your Stripe link
   },
   {
     id: 3,
     name: "\u201CMidnight Cargo Pants\u201D",
     price: "$165",
     image: "/products/pants-1.jpg",
+    stripeLink: "https://buy.stripe.com/YOUR_LINK_HERE", // Replace with your Stripe link
   },
   {
     id: 4,
@@ -32,6 +35,7 @@ const products = [
     price: "$245",
     image: "/products/jacket-1.jpg",
     tag: "Exclusive",
+    stripeLink: "https://buy.stripe.com/YOUR_LINK_HERE", // Replace with your Stripe link
   },
 ]
 
@@ -65,14 +69,17 @@ function ProductCard({ product, index }: { product: typeof products[0]; index: n
           </div>
         )}
 
-        {/* Quick View */}
-        <motion.button
-          className="absolute bottom-4 left-4 right-4 py-3 bg-background/90 backdrop-blur-sm border border-primary/30 text-primary text-sm tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0"
+        {/* Buy Now */}
+        <motion.a
+          href={product.stripeLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute bottom-4 left-4 right-4 py-3 bg-background/90 backdrop-blur-sm border border-primary/30 text-primary text-sm tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0 text-center block"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
-          Quick View
-        </motion.button>
+          Buy Now
+        </motion.a>
       </div>
 
       {/* Info */}
