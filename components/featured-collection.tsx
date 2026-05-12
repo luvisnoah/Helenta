@@ -31,7 +31,7 @@ const products = [
   },
   {
     id: 4,
-    name: "\u201CNeon Pulse Jacket\u201D",
+    name: "\u201CHelenta Bundle\u201D",
     price: "$245",
     image: "/products/HelentaBundle.png",
     tag: "Exclusive",
