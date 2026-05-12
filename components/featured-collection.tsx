@@ -8,27 +8,27 @@ import Image from "next/image"
 const products = [
   {
     id: 1,
-    name: ""Helenta Stars"",
+    name: "\u201CHelenta Stars\u201D",
     price: "$185",
     image: "/products/hoodie1.png",
     tag: "New",
   },
   {
     id: 2,
-    name: ""Chrome Logo Tee"",
+    name: "\u201CChrome Logo Tee\u201D",
     price: "$95",
     image: "/products/tee-1.jpg",
     tag: "Limited",
   },
   {
     id: 3,
-    name: ""Midnight Cargo Pants"",
+    name: "\u201CMidnight Cargo Pants\u201D",
     price: "$165",
     image: "/products/pants-1.jpg",
   },
   {
     id: 4,
-    name: ""Neon Pulse Jacket"",
+    name: "\u201CNeon Pulse Jacket\u201D",
     price: "$245",
     image: "/products/jacket-1.jpg",
     tag: "Exclusive",
