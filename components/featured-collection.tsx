@@ -9,7 +9,7 @@ const products = [
   {
     id: 1,
     name: "\u201CHelenta Stars\u201D",
-    price: "$185",
+    price: "$50",
     image: "/products/hoodie1.png",
     tag: "New",
     stripeLink: "https://buy.stripe.com/YOUR_LINK_HERE", // Replace with your Stripe link
@@ -17,7 +17,7 @@ const products = [
   {
     id: 2,
     name: "\u201CAura of Snakes\u201D",
-    price: "$95",
+    price: "$35",
     image: "/products/snakespolo.png",
     tag: "Limited",
     stripeLink: "https://buy.stripe.com/YOUR_LINK_HERE", // Replace with your Stripe link
@@ -25,14 +25,14 @@ const products = [
   {
     id: 3,
     name: "\u201CMoney Lovin\u2019 Snakes Cargo\u201D",
-    price: "$165",
+    price: "$40",
     image: "/products/cargo.png",
     stripeLink: "https://buy.stripe.com/YOUR_LINK_HERE", // Replace with your Stripe link
   },
   {
     id: 4,
     name: "\u201CHelenta Bundle\u201D",
-    price: "$245",
+    price: "$120",
     image: "/products/HelentaBundle.png",
     tag: "Exclusive",
     stripeLink: "https://buy.stripe.com/YOUR_LINK_HERE", // Replace with your Stripe link
