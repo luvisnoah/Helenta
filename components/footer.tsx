@@ -24,7 +24,7 @@ export function Footer() {
           <div>
             <h4 className="text-xs tracking-widest uppercase text-foreground mb-4">Navigate</h4>
             <ul className="space-y-3">
-              {["Collection", "Editorial", "About", "Contact"].map((link) => (
+              {["Collection", "About", "Contact"].map((link) => (
                 <li key={link}>
                   <a
                     href={`#${link.toLowerCase()}`}
