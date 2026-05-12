@@ -8,30 +8,34 @@ import Image from "next/image"
 const products = [
   {
     id: 1,
-    name: "Phantom Oversized Hoodie",
-    price: "$185",
-    image: "/products/hoodie-1.jpg",
+    name: "\u201CHelenta Stars\u201D",
+    price: "$50",
+    image: "/products/hoodie1.png",
     tag: "New",
+    stripeLink: "https://buy.stripe.com/YOUR_LINK_HERE", // Replace with your Stripe link
   },
   {
     id: 2,
-    name: "Chrome Logo Tee",
-    price: "$95",
-    image: "/products/tee-1.jpg",
+    name: "\u201CAura of Snakes\u201D",
+    price: "$35",
+    image: "/products/snakespolo.png",
     tag: "Limited",
+    stripeLink: "https://buy.stripe.com/YOUR_LINK_HERE", // Replace with your Stripe link
   },
   {
     id: 3,
-    name: "Midnight Cargo Pants",
-    price: "$165",
-    image: "/products/pants-1.jpg",
+    name: "\u201CMoney Lovin\u2019 Snakes Cargo\u201D",
+    price: "$40",
+    image: "/products/cargo.png",
+    stripeLink: "https://buy.stripe.com/YOUR_LINK_HERE", // Replace with your Stripe link
   },
   {
     id: 4,
-    name: "Neon Pulse Jacket",
-    price: "$245",
-    image: "/products/jacket-1.jpg",
+    name: "\u201CHelenta Bundle\u201D",
+    price: "$120",
+    image: "/products/HelentaBundle.png",
     tag: "Exclusive",
+    stripeLink: "https://buy.stripe.com/YOUR_LINK_HERE", // Replace with your Stripe link
   },
 ]
 
@@ -53,7 +57,7 @@ function ProductCard({ product, index }: { product: typeof products[0]; index: n
           src={product.image}
           alt={product.name}
           fill
-          className="object-cover transition-transform duration-700 group-hover:scale-105"
+          className="object-contain transition-transform duration-700 group-hover:scale-105"
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -65,14 +69,17 @@ function ProductCard({ product, index }: { product: typeof products[0]; index: n
           </div>
         )}
 
-        {/* Quick View */}
-        <motion.button
-          className="absolute bottom-4 left-4 right-4 py-3 bg-background/90 backdrop-blur-sm border border-primary/30 text-primary text-sm tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0"
+        {/* Buy Now */}
+        <motion.a
+          href={product.stripeLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute bottom-4 left-4 right-4 py-3 bg-background/90 backdrop-blur-sm border border-primary/30 text-primary text-sm tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0 text-center block"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
-          Quick View
-        </motion.button>
+          Buy Now
+        </motion.a>
       </div>
 
       {/* Info */}

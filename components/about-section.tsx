@@ -99,7 +99,7 @@ export function AboutSection() {
             <span className="text-5xl font-[family-name:var(--font-display)] text-primary neon-glow">01</span>
             <h3 className="text-sm tracking-widest uppercase text-foreground">Underground Origins</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Born in the back rooms of Tokyo&apos;s club district. Forged in late-night sessions. Made for those who move in shadows.
+              Forged in late-night sessions. Made for those who move in shadows.
             </p>
           </div>
 
