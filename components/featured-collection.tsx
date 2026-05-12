@@ -15,9 +15,9 @@ const products = [
   },
   {
     id: 2,
-    name: "\u201CChrome Logo Tee\u201D",
+    name: "\u201CAura of Snakes\u201D",
     price: "$95",
-    image: "/products/tee-1.jpg",
+    image: "/products/snakespolo.png",
     tag: "Limited",
   },
   {
